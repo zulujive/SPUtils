@@ -6,7 +6,7 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 6996;
 const CLIENT_ID = '881592279822-fkq9tr5sb3eq44opskkfei2baotve9dq.apps.googleusercontent.com';
-const CLIENT_SECRET = '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T';
+const CLIENT_SECRET = '';
 const REDIRECT_URI = 'https://utils.stemplace.org/oauth2callback';
 const SCOPES = ['https://www.googleapis.com/auth/userinfo.profile','https://www.googleapis.com/auth/userinfo.email'];
 
