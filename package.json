@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "gaxios": "^5.1.0",
+    "googleapis": "^115.0.0",
+    "oauth2": "^0.0.1"
+  }
+}
