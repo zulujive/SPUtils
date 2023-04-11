@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
     access_type: 'offline',
     scope: SCOPES,
   });
-  res.send(express.static(__dirname));
+  app.use(express.static(__dirname));
 });
 
 app.get('/oauth2callback', (req, res) => {
