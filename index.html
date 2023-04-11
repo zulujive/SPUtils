@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>STEMPlace Site Utils</title>
+    <style>
+      h1 {
+        color: #05695f;
+      }
+      .container {
+        max-width: 800px;
+        margin: 12;
+        padding: 50px;
+        background: linear-gradient(to bottom right, #F472B6, #BD10E0, #FFD700);
+        color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      @media screen and (max-width: 768px) {
+        .container {
+          padding: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>STEMPlace OAuth Verification Tool</h1>
+      <p>
+        This tool is useful for retrieving data for verifying 
+        your identity on STEMPlace. DO NOT share the information 
+        provided by this website, it may be sensitive!
+      </p>
+      <a href="${authUrl}">Authorize</a>
+    </div>
+  </body>
+</html>
