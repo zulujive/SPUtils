@@ -10,13 +10,14 @@ const CLIENT_SECRET = '';
 const REDIRECT_URI = 'https://utils.stemplace.org/oauth2callback';
 const SCOPES = ['https://www.googleapis.com/auth/userinfo.profile','https://www.googleapis.com/auth/userinfo.email'];
 
+app.use(express.static(__dirname));
+
 app.get('/', (req, res) => {
   const oauth2Client = new OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI);
   const authUrl = oauth2Client.generateAuthUrl({
     access_type: 'offline',
     scope: SCOPES,
   });
-  app.use(express.static(__dirname));
 });
 
 app.get('/oauth2callback', (req, res) => {
