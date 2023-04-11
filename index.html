@@ -3,11 +3,11 @@
     <title>STEMPlace Site Utils</title>
     <style>
       h1 {
-        color: #05695f;
+        color: #fff;
+        text-align: center;
       }
       .container {
-        max-width: 800px;
-        margin: 12;
+        margin: 0 auto;
         padding: 50px;
         background: linear-gradient(to bottom right, #F472B6, #BD10E0, #FFD700);
         color: #fff;
@@ -25,12 +25,19 @@
   <body>
     <div class="container">
       <h1>STEMPlace OAuth Verification Tool</h1>
-      <p>
-        This tool is useful for retrieving data for verifying 
-        your identity on STEMPlace. DO NOT share the information 
-        provided by this website, it may be sensitive!
+      <p>This tool is useful for retrieving data for verifying 
+        your identity on STEMPlace. <b>DO NOT</b> share the information 
+        provided by this website, it may be sensitive! <br><br><br>
+        
+        This tool is intended for people who:
+      <ul>
+        <li>Initially signed up with their personal email (not @(s.)stemk12.org)</li>
+        <li>Are soon going to graduate (congrats!)</li>
+        <li>Former members of the STEM community</li>
+        <li>Anyone who was active and ended in good standing on STEMPlace v1 and v2</li>
+      </ul>
       </p>
-      <a href="${authUrl}">Authorize</a>
+    <a href="${authUrl}">Authorize</a>
     </div>
   </body>
 </html>
